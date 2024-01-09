@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
-
+import logo from "./logo.svg";
+import "./App.css";
+import DogCard from "./DogCard";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      Hello
+      <DogCard
+        name="Honey"
+        image="https://img.freepik.com/free-photo/puppy-that-is-walking-snow_1340-37228.jpg?size=626&ext=jpg&ga=GA1.1.1412446893.1704672000&semt=sph"
+      />
+      <DogCard
+        name="Tiger"
+        image=" https://img.freepik.com/free-photo/isolated-happy-smiling-dog-white-background-portrait-6_1562-695.jpg"
+      />
     </div>
   );
 }
