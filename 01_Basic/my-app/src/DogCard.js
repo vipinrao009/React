@@ -1,15 +1,42 @@
 import Image from "./Image";
+import Name from "./Name";
+
 
 function DogCard(props) {
+  let title = "This is Dog Card";
   return (
     <>
-      <h3>{props.name}</h3>
+      <h2
+        style={{
+          fontSize: "30px",
+          color: "red",
+        }}
+      >
+        {title}
+      </h2>
+      <Name>
+        <h3>{props.name}</h3>
+      </Name>
       <Image src={props.image} />
-      
     </>
   );
 }
 
+/*
+You can send all JSX in props (line 7....)
+You can print react variable in DogCard (line 8....)
+
+function DogCard(props) {
+  return (
+    <>
+      <Name>
+        <h3>{props.name}</h3>
+      </Name>
+      <Image src={props.image} />
+    </>
+  );
+}
+*/
 export default DogCard;
 
 /*
@@ -32,4 +59,6 @@ export default DogCard;
       (b) export by name => When we wnat to import multiple function then we use this method and this method is known as destructure 
           (i) In this method , Export and import name should be same 
           (ii) We can use both method at time
+
+
 */

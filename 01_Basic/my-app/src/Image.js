@@ -1,9 +1,26 @@
 function Image(props) {
   return (
     <div className="image-box">
-      <img src={props.src}/>
+      <img src={props.src} />
     </div>
   );
 }
 
-export default Image
+
+/*
+ 
+We can use props as destructor
+
+function Image({ src }) {
+  return (
+    <>
+      <div className="image-box">
+        <img src={src} />
+      </div>
+    </>
+  );
+}
+
+U can send all JSX in props 
+ */
+export default Image;
